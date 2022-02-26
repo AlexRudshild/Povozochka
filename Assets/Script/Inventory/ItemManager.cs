@@ -31,13 +31,7 @@ public class ItemManager : MonoBehaviour
 				}
 			}
 		}
-		//var cells = new bool[,] {
-		//    { true, true },
-		//    { true, true }
-		//};
-		//var test = new ItemController();
-		//test.Open = new OpenItem(10, 10);
-		//Items.Add(new Item("123", "123", "qweqweqwe", GetSprite(GlobalParametrs.SpriteFolderPath + "Мешок Большой.png"), "Мешок Большой.png", cells, Color.white, test));
+
 		foreach (var item in Items)
 		{
 			SaveItem(item);

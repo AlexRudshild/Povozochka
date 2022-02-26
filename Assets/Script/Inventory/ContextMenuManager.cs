@@ -10,7 +10,7 @@ public class ContextMenuManager : MonoBehaviour
 
 	[SerializeField] private EventSystem eventSystem;
 	[SerializeField] private RectTransform _PanelRect;
-	[SerializeField] private InventoryControl _inventoryController;
+	[SerializeField] private InventoryControler _inventoryController;
 
 	[Header("Menu")]
 

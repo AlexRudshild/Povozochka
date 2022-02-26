@@ -341,11 +341,11 @@ public class IconEditor : MonoBehaviour
 		if (_curItem.Cells != cells)
 		{
 			_curItem.Cells = cells;
-			InventoryControl.Instance.UpdateCells(_curItem.Id);
+			InventoryControler.Instance.UpdateCells(_curItem.Id);
 		}
 		ItemManager.SaveItem(_curItem);
-		InventoryControl.Instance.UpdateIcons(_curItem.Id);
-		InventoryControl.Instance.UpdateNames(_curItem.Id, _curItem.Name);
+		InventoryControler.Instance.UpdateIcons(_curItem.Id);
+		InventoryControler.Instance.UpdateNames(_curItem.Id, _curItem.Name);
 	}
 
 	public void OpenCellsEditor()

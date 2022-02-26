@@ -34,7 +34,7 @@ public class Inventory : MonoBehaviour
 
 	public void Close()
 	{
-		InventoryControl.Instance.RemoveInventory(this);
+		InventoryControler.Instance.RemoveInventory(this);
 
 		SaveIcons();
 

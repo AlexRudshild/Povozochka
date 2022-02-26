@@ -218,17 +218,14 @@ public static class ResourceEnumMod
 		return resourceEnum.ToString().Replace("Size", "");
 	}
 
-	public static bool[,] CellsFromSize(this ResourceEnum resource)
+	public static bool[,] CellsFromSize(this ResourceEnum resource) 
 	{
-		switch (resource)
+		return resource switch
 		{
-			case ResourceEnum.Size2x2:
-				return new bool[,] { { true, true }, { true, true } };
-			case ResourceEnum.Size4x2:
-				return new bool[,] { { true, true }, { true, true }, { true, true }, { true, true } };
-			default:
-				return new bool[,] { { true } };
-		}
+			ResourceEnum.Size2x2 => new bool[,] { { true, true }, { true, true } },
+			ResourceEnum.Size4x2 => new bool[,] { { true, true }, { true, true }, { true, true }, { true, true } },
+			_ => new bool[,] { { true } }
+		};
 	}
 
 	public static Sprite GetTokenSprite(this IconTypeEnum iconType)

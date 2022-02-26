@@ -77,7 +77,7 @@ public class MoveWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
 			transform.parent.SetAsLastSibling();
 
-			InventoryControl.Instance.ReFillListInvetors();
+			InventoryControler.Instance.ReFillListInvetors();
 
 			_dragWindow = true;
 		}

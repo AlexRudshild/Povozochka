@@ -151,7 +151,7 @@ public static class InventorySaver
 
         //        if (curItem != null)
         //        {
-        //            tmp = InventoryControl.Instance.SetIcon(inventory, curItem, counter);
+        //            tmp = InventoryControler.Instance.SetIcon(inventory, curItem, counter);
         //            tmp.RectTransform.localPosition = pos;
         //            tmp.RectTransform.localRotation = new Quaternion(0, 0, rot.x, rot.y);
         //            tmp.RectTransform.SetParent(inventory.ContentRect);
@@ -292,7 +292,7 @@ public class SaveIcons
 
             if (curItem)
             {
-                var item = InventoryControl.Instance.SetIcon(inventory, curItem, icon.count, icon.isBlock);
+                var item = InventoryControler.Instance.SetIcon(inventory, curItem, icon.count, icon.isBlock);
                 item.RectTransform.localPosition = icon.pos.ToVector3();
 
                 item.RectTransform.localScale = new Vector3(icon.isFlip ? -1 : 1, 1, 1);

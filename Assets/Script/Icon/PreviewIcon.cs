@@ -27,7 +27,7 @@ public class PreviewIcon : MonoBehaviour, IPointerClickHandler
         switch (eventData.button)
         {
             case PointerEventData.InputButton.Left:
-				InventoryControl.Instance.AddQuickly(Item);
+				InventoryControler.Instance.AddQuickly(Item);
 				break;
             case PointerEventData.InputButton.Right:
 				//ContextMenuManager.Instance.Open(this);
